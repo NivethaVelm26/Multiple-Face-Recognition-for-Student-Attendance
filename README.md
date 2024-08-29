@@ -9,19 +9,27 @@ I chose to work on this project to address the inefficiencies of traditional att
 # PROPOSED SYSTEM
 1. INPUT
    The system takes input images of faces from the computer/laptop camera or an external camera connected to the system.
-3. PROCESS
+   
+2. PROCESS
    2.1. Face Detection:
         The system uses the Local Binary Patterns (LBP) algorithm implemented through the OpenCV library to detect faces in the input image. The captured image undergoes processing to identify facial features based on the patterns of grayscale pixels.
+   
    2.2. Feature Extraction:
         Extracting unique features from the detected faces to create a distinctive representation for each person. The system employs deep learning techniques to compute and compare the facial features.
+   
    2.3. Recognition and Matching:
         Comparing the extracted features with the existing database to recognize individuals. The system matches the computed features with the pre-registered face database.
+   
    2.4. Attendance Logging:
         Logging the attendance of recognized individuals along with the corresponding subject ID and timestamp. Upon successful recognition, the system updates the attendance records in real-time.
+   
 4. OUTPUT
+   
    3.1. Recognized Faces:
         The system provides a visual indication of recognized faces during the attendance process.
+   
    3.2. Attendance Records:
         The attendance system updates an Excel sheet with the attendance status of each recognized individual. The records typically include fields like Student ID, Name and Timestamp.
+   
    3.3. Status Messages:
         The system may generate status messages to inform users about the success or failure of the recognition process.
